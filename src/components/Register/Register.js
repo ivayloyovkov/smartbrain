@@ -35,7 +35,8 @@ class Register extends React.Component {
                     this.props.loadUser(user);
                     this.props.onRouteChange('home');
                 };
-            });
+            })
+            .catch(err => res.status(400).json('Unable to register'));
 
 
     }
