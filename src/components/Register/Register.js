@@ -20,7 +20,7 @@ class Register extends React.Component {
         this.setState({ password: event.target.value })
     }
     onSubmitRegister = () => {
-        fetch('https://smartbrain-iy.herokuapp.com/register', {
+        fetch('https://smartbrain-iy-api.herokuapp.com/register', {
                 method: 'post',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

@@ -16,7 +16,7 @@ class Signin extends React.Component {
         this.setState({ signinPassword: event.target.value })
     }
     onSubmitSignIn = () => {
-        fetch('https://smartbrain-iy.herokuapp.com/signin', {
+        fetch('https://smartbrain-iy-api.herokuapp.com/signin', {
                 method: 'post',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
